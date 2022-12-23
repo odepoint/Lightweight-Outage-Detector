@@ -23,7 +23,7 @@ except pd.errors.EmptyDataError:
     writer = csv.writer(csvfile)
     writer.writerow(['Timestamp', 'Is offline'])
 
-count = 1;
+count = 1
 while True:
   # checks if the internet is offline
   is_offline = not check_internet()
