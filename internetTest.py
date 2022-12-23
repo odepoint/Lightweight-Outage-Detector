@@ -15,7 +15,6 @@ def check_internet():
   
 import pandas as pd
 
-empty = False;
 try:
   pd.read_csv('internet_status.csv') 
 except pd.errors.EmptyDataError:
