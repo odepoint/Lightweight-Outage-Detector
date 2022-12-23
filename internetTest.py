@@ -36,7 +36,7 @@ while True:
   with open('internet_status.csv', 'a', newline='') as csvfile:
     writer = csv.writer(csvfile)
     if(is_offline):
-      count+=1
+      count = 1
     if(count > 0): 
       # updates the CSV file with the current status
       writer.writerow([timestamp, is_offline])
